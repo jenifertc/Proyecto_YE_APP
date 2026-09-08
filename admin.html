@@ -1,11 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Administrativo</title>
 </head>
 <body>
+
+    <!--======= BARRA SUPERIOR ======-->
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo de la empresa" class="logo">
+        </a>
+        <nav aria-label="Cuenta de usuario"
+            <ul>
+                <li>Administrador: Yuribell Chala</li>
+                <li><a href="login.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <hr>
+
+    <!--======= BARRA LATERAL DE MODULOS ======-->
+    <aside arial-label="Menu de administracion"
+    <nav aria-label="Modulos del sistema">
+        <ul>
+            <li><a href="#modulo-usuarios">Usuarios</a></li>
+            <li><a href="#modulo-productos">Productos</a></li>
+            <li><a href="#modulo-ventas">Ventas</a></li>
+            <li><a href="#modulo-reportes">Reportes</a></li>
+            <li><a href="#modulo-servicios">Servicios</a></li>
+            <li><a href="#modulo-agendamiento">Agendamiento</a></li>
+            <li><a href="#modulo-configuracion">Configuración</a></li>
+        </ul>
+    </nav>
+    </aside>
+    <hr>
+    <!--======= CONTENIDO PRINCIPAL ======-->
+    <main>
+        <h1>Gestion de Modulos</h1>
+        <section id="modulo-usuarios" arial-labelledby="titulo-modulo-usuarios">
+            <h2 id="titulo-usuarios">Gestion de usuarios</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Agregar nuevo usuario</legend>
+                <div>
+                    <label for="nombre-usuario">Nombre completo</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                </div>
+                <div>
+                    <label for="rol-cliente">Rol</label>
+                    <select id="rol-cliente" name="rol-cliente" required>
+                        <option value="admin">Administrador</option>
+                        <option value="user">cliente</option>
+                    </select>
+                </div>
+            </fieldset>
+            <button type="submit">Guardar usuario</button>
+        </form>
+        </section>
+        
+        <hr>
+        <!-- Tabla de datos -->
+         <table>
+            <caption>Listado de usuarios registrados</caption>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Procedimientos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Yuribell Chala</td>
+                    <td>Administrador</td>
+                    <td><a href="#">Editar</a> <a href="#">Eliminar</a></td>
+                </tr>
+            </tbody>
+         </table>
+        </section>
+        
+        <hr>
+        <section id="modulo-Productos" arial-labelledby="titulo-modulo-productos">
+            <h2 id="titulo-productos">Gestion de productos</h2>
+            <table>
+                <caption>Listado de productos registrados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Producto A</td>
+                        <td>50</td>
+                        <td>$100.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="modulo-ventas" arial-labelledby="titulo-modulo-ventas">
+            <h2 id="titulo-ventas">Gestion de ventas</h2>
+            <table>
+                <caption>Listado de ventas realizadas</caption>
+                <thead>
+                    <tr> 
+                        <th scope="col">Factura</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>F001</td>
+                        <td>Jenifer</td>
+                        <td>2026-06-22</td>
+                        <td>$200.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="modulo-reportes" arial-labelledby="titulo-modulo-reportes">
+            <h2 id="titulo-reportes">Gestion de reportes</h2>
+            <table>
+                <caption>Listado de reportes generados</caption>
+                <thead>
+                    <tr> 
+                        <th scope="col">ID</th>
+                        <th scope="col">Tipo de reporte</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>R001</td>
+                        <td>Reporte de ventas</td>
+                        <td>2026-06-22</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="modulo-servicios" arial-labelledby="titulo-modulo-servicios">
+            <h2 id="titulo-servicios">Gestion de servicios</h2>
+            <table>
+                <caption>Listado de servicios ofrecidos</caption>
+                <thead>
+                    <tr> 
+                        <th scope="col">ID</th>
+                        <th scope="col">Servicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>S001</td>
+                        <td>Cejas</td>
+                    </tr>
+                    <tr> 
+                        <td>S002</td>
+                        <td>Pestañas</td>
+                    </tr>
+                    <tr> 
+                        <td>S003</td>
+                        <td>Uñas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="modulo-agendamiento" arial-labelledby="titulo-modulo-agendamiento">
+            <h2 id="titulo-agendamiento">Gestion de agendamiento</h2>
+            <table>
+                <caption>Listado de citas agendadas</caption>
+                <thead>
+                    <tr> 
+                        <th scope="col">ID</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Servicio</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>A001</td>
+                        <td>Jenifer</td>
+                        <td>Cejas</td>
+                        <td>2026-06-22</td>
+                        <td>10:00 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>   
+   
+    </main>
+    <footer>
+        <p>&copy; 2026 ye estudio de uñas. Panel administrativo interno. </p>
+    </footer>
+
     
 </body>
 </html>
