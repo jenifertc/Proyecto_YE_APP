@@ -98,10 +98,18 @@
                                 type="password"
                                 id="password"
                                 name="password"
-                                placeholder="Ingresa tu contraseña"
-                                required
+                                placeholder="Ingresa tu contraseña" required
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                title="La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula, un número y un carácter especial."
                             >
-
+                            <!-- Botón para mostrar / ocultar contraseña -->
+                            <button 
+                            type="button" 
+                            id="togglePassword" 
+                            style="position: absolute; right: 10px; background: none; border: none; cursor: pointer; font-size: 1.1rem;"
+                            aria-label="Mostrar u ocultar contraseña"
+                            
+                            ></button>
                         </div>
 
 
@@ -123,14 +131,16 @@
 
 
                         <!-- BOTÓN -->
-
+                         
                         <button
                             type="submit"
                             class="btn-login"
                         >
-                            Ingresar
+                        <ul>
+                            <li><a href="admin.html"> Ingresar </a></li>
+                            </ul>
                         </button>
-
+                         
                     </fieldset>
 
                 </form>

@@ -1,0 +1,63 @@
+.calificaciones {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f1ed;
+}
+
+.calificaciones h2 {
+    color: black;
+    font-size: 30px;
+}
+
+#formCalificacion {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formCalificacion input,
+#formCalificacion textarea {
+    padding: 12px;
+    border: 1px solid #c9a96e;
+    border-radius: 8px;
+    font-family: Montserrat, sans-serif;
+}
+
+#formCalificacion textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.estrellas {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.estrellas span.seleccionada {
+    color: #d4a017;
+}
+
+#formCalificacion button {
+    padding: 12px;
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formCalificacion button:hover {
+    background-color: #8c6508;
+}
+
+.opinion {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 450px;
+    border-radius: 10px;
+}

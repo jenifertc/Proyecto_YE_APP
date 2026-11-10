@@ -1,0 +1,117 @@
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float svg {
+    width: 34px;
+    height: 34px;
+    fill: #ffffff;
+}
+
+/* Apariencia de botones */
+button,
+input[type="submit"],
+input[type="button"] {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sombra);
+}
+
+/* Apoyo visual para tablas y campos en ambos temas */
+html[data-theme="dark"] table,
+html[data-theme="dark"] fieldset,
+html[data-theme="dark"] article {
+    background-color: var(--fondo-tarjeta);
+    color: var(--texto-principal);
+    border-color: var(--color-borde);
+}
+
+html[data-theme="dark"] th,
+html[data-theme="dark"] td,
+html[data-theme="dark"] label,
+html[data-theme="dark"] p,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] address,
+html[data-theme="dark"] legend,
+html[data-theme="dark"] caption {
+color: var(--texto-principal);
+    
+    
+/* Botón flotante arriba */
+.btn-arriba {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #b88b5a;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.btn-arriba.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-arriba:hover {
+    transform: scale(1.1);
+}
+
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+    background-color: #40373d;
+    color: #ffffff;
+    border: 1px solid var(--color-borde);
+}
+
+@media (max-width: 600px) {
+    .theme-toggle {
+        padding: 8px 11px;
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
